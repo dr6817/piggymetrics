@@ -1,6 +1,6 @@
 name: Reverse Engineering
 
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   ReverseEngineering:
@@ -15,6 +15,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Run Rule Engine
       uses: PalladioSimulator/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
-        with:
-          source_path: '.'
-          rules: 'SPRING,MAVEN'
+      with:
+        source_path: '.'
+        rules: 'SPRING,MAVEN'
