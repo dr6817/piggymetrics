@@ -1,0 +1,20 @@
+name: Reverse Engineering
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  ReverseEngineering:
+    name: Maven Verify
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - name: Run Rule Engine
+      uses: PalladioSimulator/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
+        with:
+          source_path: '.'
+          rules: 'SPRING,MAVEN'
