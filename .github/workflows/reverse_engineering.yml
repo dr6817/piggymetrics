@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   ReverseEngineering:
-    name: Maven Verify
+    name: Reverse Engineering
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -14,7 +14,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
     - name: Run Rule Engine
-      uses: PalladioSimulator/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
+      uses: dr6817/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
       with:
         source_path: '.'
         rules: 'SPRING,MAVEN'
