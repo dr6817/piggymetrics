@@ -17,4 +17,5 @@ jobs:
       uses: dr6817/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
       with:
         source_path: '.'
+        benchmark: 'true'
         rules: 'org.palladiosimulator.somox.analyzer.rules.impl.maven,org.palladiosimulator.somox.analyzer.rules.impl.spring,org.palladiosimulator.somox.analyzer.rules.impl.ecmascript'
