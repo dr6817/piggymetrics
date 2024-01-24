@@ -18,4 +18,4 @@ jobs:
       with:
         source_path: '.'
         benchmark: 'true'
-        rules: 'org.palladiosimulator.somox.analyzer.rules.impl.maven,org.palladiosimulator.somox.analyzer.rules.impl.spring,org.palladiosimulator.somox.analyzer.rules.impl.ecmascript'
+        rules: "org.palladiosimulator.retriever.extraction.rules.maven,org.palladiosimulator.retriever.extraction.rules.spring"
