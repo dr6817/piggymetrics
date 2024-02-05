@@ -14,7 +14,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
     - name: Run Rule Engine
-      uses: dr6817/Palladio-ReverseEngineering-SoMoX-RuleEngine@master
+      uses: dr6817/Palladio-ReverseEngineering-SoMoX-RuleEngine@main
       with:
         source_path: '.'
         benchmark: 'true'
