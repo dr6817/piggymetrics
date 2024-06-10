@@ -17,5 +17,5 @@ jobs:
       uses: PalladioSimulator/Palladio-ReverseEngineering-Retriever@action_extensions
       with:
         source_path: '.'
-        benchmark: 'false'
+        benchmark: 'true'
         rules: "org.palladiosimulator.retriever.extraction.rules.maven,org.palladiosimulator.retriever.extraction.rules.spring"
